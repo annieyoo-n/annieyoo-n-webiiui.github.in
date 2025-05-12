@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.about-block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-block img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-text i {
+  color: #005fa3;
+  margin-right: 8px;
+}
+#about p:hover {
+  color: #92aee1;
+  transition: color 0.4s ease;
+}
+
+    </style>
+    
+</head>
+<body 
+!-- Top contact bar -->
+  <div class="top-bar">
+    <div class="contact-info">
+      <a href="tel:065432000"><i class="fas fa-phone"></i> 06-5432000</a>
+      <a href="mailto:info@iiui.com"><i class="fas fa-envelope"></i> info@iiui.com</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+   <!-- Main navbar -->
+   <nav class="navbar">
+    <div class="logo">
+      <img src="whiteeeeeeee.jpg" alt="IIUI" width="100" height="100" >
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a  href="studywithus.html">Study with Us</a></li>
+      <li><a href="department.html">Departments </a></li>
+      <li><a  href="events.html">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="login-btn">LOGIN</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="line-draw"></div>
+  
+    <div class="about-container">
+      <!-- Block 1 -->
+      <div class="about-block">
+        <img src= " https://i0.wp.com/jaamiah.com/wp-content/uploads/2020/11/International-Islamic-University-Islamabad.png?fit=954%2C455&ssl=1" alt="IIUI Campus">
+        <div class="about-text">
+          <p>
+            <i class="fas fa-university"></i> International Islamic University stands at the forefront of science and technology education, empowering students with cutting-edge knowledge and innovative learning experiences.
+            The institution is committed to cultivating a diverse and inclusive academic atmosphere, where individuals from all backgrounds can collaborate and excel.
+            <i class="fas fa-lightbulb"></i> By fostering critical thinking and creativity, it provides students with the tools to transform ideas into groundbreaking solutions for the real world.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Block 2 -->
+      <div class="about-block reverse">
+        <div class="about-text">
+          <p>
+            <i class="fas fa-award"></i> With a strong emphasis on excellence and leadership, the university continues to shape future generations of scientists, engineers, and innovators.
+            The university houses state-of-the-art laboratories, an expansive digital library, and modern recreational facilities to enhance the student experience.
+            <i class="fas fa-users"></i> Its culturally rich and globally diverse community allows students to broaden their perspectives, promoting intercultural understanding and collaboration.
+            <i class="fas fa-graduation-cap"></i> Dedicated faculty members, many of whom are leaders in their fields, mentor students to become socially responsible and globally competitive professionals.
+          </p>
+        </div>
+        <img src="https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2020/06/Faisal-Mosque-in-Islamabad-A-01-06-1024x640.jpg" alt="IIUI Students">
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer Section -->
+    <footer>
+       <p> &copy; 2025 International Islamic University Islamabad. All rights reserved.</p>
+      </footer>
+      
+</body>
+</html>
