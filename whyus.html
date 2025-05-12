@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+  <style>
+    .layer1 { transform: rotate(-2deg) translateY(60px); animation-delay: 0.2s; }
+.layer2 { transform: rotate(1.5deg) translateY(60px); animation-delay: 0.4s; }
+.layer3 { transform: rotate(-1.2deg) translateY(60px); animation-delay: 0.6s; }
+.layer4 { transform: rotate(2deg) translateY(60px); animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.liquid-bg .blob {
+  position: absolute;
+  background: linear-gradient(135deg, #8b5cf6, #d946ef);
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: blur(70px);
+  animation: moveBlob 20s ease-in-out infinite alternate;
+}
+
+.liquid-bg .blob:nth-child(1) { top: -100px; left: -80px; width: 400px; height: 400px; animation-delay: 0s; }
+.liquid-bg .blob:nth-child(2) { bottom: -120px; right: -90px; width: 350px; height: 350px; animation-delay: 5s; }
+.liquid-bg .blob:nth-child(3) { top: 40%; left: 50%; width: 300px; height: 300px; animation-delay: 10s; }
+
+@keyframes moveBlob {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-50px, 50px) scale(1.2); }
+}
+    .testimonial-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 60px auto;
+  background: #906f96;
+  color: #0b5625;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-slide h4 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #420808;
+}
+
+.testimonial-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c4a8dd;
+  color: #2d2a7f;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.testimonial-slider button:hover {
+  background: #67adb9;
+}
+
+.testimonial-slider .prev {
+  left: 20px;
+}
+
+.testimonial-slider .next {
+  right: 20px;
+}
+
+  </style>
+
+
+</head>
+<body 
+!-- Top contact bar -->
+  <div class="top-bar">
+    <div class="contact-info">
+      <a href="tel:065432000"><i class="fas fa-phone"></i> 06-5432000</a>
+      <a href="mailto:info@iiui.com"><i class="fas fa-envelope"></i> info@iiui.com</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- Main navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="whiteeeeeeee.jpg" alt="IIUI" width="100" height="100" >
+    </div>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a  href="studywithus.html">Study with Us</a></li>
+      <li><a href="department.html">Departments </a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="#" class="login-btn">LOGIN</a>
+  </nav>
+
+  <section class="choose us ">
+    <h2>Why Choose Us?</h2>
+    <div class="choose-grid">
+      <div class="choose-card layer1">
+            <i class="fas fa-graduation-cap icon"></i>
+         <h3>World-Class Academics</h3>
+         <p>Elite programs led by visionary educators driving real-world impact.</p>
+      </div>
+  
+      <div class="choose-card layer2">
+        <i class="fas fa-school icon"></i>
+        <h3>Modern Campus</h3>
+        <p>State-of-the-art labs, digital libraries, and inspiring student lounges.</p>
+      </div>
+  
+      <div class="choose-card layer3">
+        <i class="fas fa-globe icon"></i>
+        <h3>Diverse Global Network</h3>
+        <p>Connect with students from 30+ countries and grow your international outlook.</p>
+      </div>
+  
+      <div class="choose-card layer4">
+        <i class="fas fa-lightbulb icon"></i>
+        <h3>Innovative Research</h3>
+        <p>Pioneering discoveries and startup incubators for future leaders.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Liquid morphing blob background -->
+  <div class="liquid-bg">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
+</section>
+
+ 
+  <section class="testimonial-slider">
+    <div class="testimonial-slide active">
+      <p>"Studying here has opened so many doors for me. The faculty is exceptional."</p>
+      <h4>— Ayesha Khan, BSc Computer Science</h4>
+    </div>
+  
+    <div class="testimonial-slide">
+      <p>"The international student community made me feel at home instantly."</p>
+      <h4>— Omar Malik, MBA</h4>
+    </div>
+  
+    <div class="testimonial-slide">
+      <p>"Modern labs, a welcoming campus, and endless opportunities — truly amazing."</p>
+      <h4>— Fatima Zahra, BS Biotechnology</h4>
+    </div>
+  
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </section>
+  
+<!-- Footer Section -->
+    <footer>
+       <p> &copy; 2025 International Islamic University Islamabad. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlide(slideIndex);
+        
+        function showSlide(index) {
+          let slides = document.getElementsByClassName("testimonial-slide");
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+          }
+          slides[index].classList.add("active");
+        }
+        
+        function nextSlide() {
+          slideIndex++;
+          let slides = document.getElementsByClassName("testimonial-slide");
+          if (slideIndex >= slides.length) slideIndex = 0;
+          showSlide(slideIndex);
+        }
+        
+        function prevSlide() {
+          slideIndex--;
+          let slides = document.getElementsByClassName("testimonial-slide");
+          if (slideIndex < 0) slideIndex = slides.length - 1;
+          showSlide(slideIndex);
+        }
+    </script>
+        
+</body>
+</html>
